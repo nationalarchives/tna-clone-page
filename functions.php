@@ -79,7 +79,7 @@ function load_cloned_page() {
 	$page = get_transient( 'tna-clone-'.$post->ID );
 
 	if( $page && ! is_admin() ) {
-		echo 'clone'.$page;
+		echo '<!-- Cloned page --> '.$page.' <!-- End cloned page --> ';
 		die;
 	}
 }
